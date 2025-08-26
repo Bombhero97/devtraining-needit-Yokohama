@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>true</advanced>
+        <applies_to table="x_58872_needit_needit_task.*">state=3^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </applies_to>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description>CUSTOM ACL Need It Table Read Only STATE</description>
+        <local_or_existing>Local</local_or_existing>
+        <name>x_58872_needit_needit_task.*</name>
+        <operation display_value="write">write</operation>
+        <script><![CDATA[if (gs.hasRole('x_58872_needit.admin') ||
+    gs.hasRole('x_58872_needit.user') ||
+    gs.hasRole('x_58872_needit.task.user')) {
+    answer = false;
+} else {
+    answer = true;
+}]]></script>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-20 09:07:26</sys_created_on>
+        <sys_id>4576bf54832f6690be23ca96feaad39a</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>x_58872_needit_needit_task.*</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_security_acl_4576bf54832f6690be23ca96feaad39a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-20 09:46:48</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>a2390823dbea3d54caf99027c596195a</instance_id>
+        <instance_name>dev221002</instance_name>
+        <name>sys_security_acl_4576bf54832f6690be23ca96feaad39a</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl"&gt;&lt;sys_security_acl action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;admin_overrides&gt;true&lt;/admin_overrides&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;applies_to table="x_58872_needit_needit_task.*"&gt;state=3^EQ&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/applies_to&gt;&lt;condition/&gt;&lt;controlled_by_refs/&gt;&lt;decision_type&gt;allow&lt;/decision_type&gt;&lt;description&gt;CUSTOM ACL Need It Table Read Only STATE&lt;/description&gt;&lt;local_or_existing&gt;Local&lt;/local_or_existing&gt;&lt;name&gt;x_58872_needit_needit_task.*&lt;/name&gt;&lt;operation display_value="write"&gt;write&lt;/operation&gt;&lt;script&gt;&lt;![CDATA[if (gs.hasRole('x_58872_needit.admin') ||
+    gs.hasRole('x_58872_needit.user') ||
+    gs.hasRole('x_58872_needit.task.user')) {
+    answer = false;
+} else {
+    answer = true;
+}]]&gt;&lt;/script&gt;&lt;security_attribute/&gt;&lt;sys_class_name&gt;sys_security_acl&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-20 09:07:26&lt;/sys_created_on&gt;&lt;sys_id&gt;4576bf54832f6690be23ca96feaad39a&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_58872_needit_needit_task.*&lt;/sys_name&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_security_acl_4576bf54832f6690be23ca96feaad39a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-20 09:46:48&lt;/sys_updated_on&gt;&lt;type display_value="record"&gt;record&lt;/type&gt;&lt;/sys_security_acl&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1707600387</payload_hash>
+        <record_name>x_58872_needit_needit_task.*</record_name>
+        <reverted_from/>
+        <source>6e0d7b84832b2690be23ca96feaad300</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-20 09:46:48</sys_created_on>
+        <sys_id>6d0088a0836f6690be23ca96feaad3f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198c6dfbf140000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-20 09:46:48</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>d10088a0b46f669093d4d067437664f1</update_guid>
+        <update_guid_history>d10088a0b46f669093d4d067437664f1:-1707600387,104f3b902b6f6690a7bb0038782f44e2:-939605942,f69cbb9cd32f6690b6c26b59e3d68221:-832866250,044c3b9c462f66904693175337787b59:711044136,77ba371cc52f6690e2bd556f5f4b772d:-1407809613,77ba371cc52f6690e2bd556f5f4b772d:-1407809613,ac6a3fd8222f6690a78d224d98c70fbc:-709939504,9d3a3bd81f2f6690a8d0f1913a72924d:770059004,88f933d8df2f669021f41cef326dc9d1:1808445218,0e093f187a2f66904e7061614019d35e:-879822941,1c483b18662f669057763ba4d76d745e:770059004,b807bb94262f669012225d1fe648701e:-1858016547</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-20 09:47:44</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>51ed827b0c534710889be76dbb1cb024</sys_id>
+        <sys_metadata>4576bf54832f6690be23ca96feaad39a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_58872_needit_needit_task.*</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent display_value="x_58872_needit_needit_task">10728c9c832b2690be23ca96feaad3b1</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_security_acl_4576bf54832f6690be23ca96feaad39a</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_4576bf54832f6690be23ca96feaad39a">6d0088a0836f6690be23ca96feaad3f1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-20 09:47:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
